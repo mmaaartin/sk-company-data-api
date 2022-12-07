@@ -9,4 +9,4 @@ app.include_router(company.router)
 
 @app.get("/")
 def root():
-    return {"message": "Hello to Sikoia API!"}
+    return {"message": "Hello to Company Data API!"}

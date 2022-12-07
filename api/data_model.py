@@ -1,6 +1,6 @@
 from datetime import date
 from pydantic import BaseModel
-from typing import List, Union
+from typing import List, Union, Optional
 
 
 class Company(BaseModel):
@@ -8,6 +8,6 @@ class Company(BaseModel):
     company_name: str
     country: str
     address: str
-    founded: date
-    disolved: Union[date, None]
-    related_entities: List[dict]
+    founded: Union[str, None]
+    dissolved: Union[str, None]
+    related_entities: Optional[List[dict]]
